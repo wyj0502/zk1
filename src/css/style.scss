@@ -1,0 +1,78 @@
+@import "common.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #f8f8f8;
+    .header {
+        width: 100%;
+        height: px2rem(45px);
+        background: #fff;
+        text-align: center;
+        line-height: px2rem(45px);
+        color: #4c4548;
+        font-size: px2rem(17px);
+    }
+    .main {
+        width: 100%;
+        flex: 1;
+        overflow-y: hidden;
+        .box {
+            width: 100%;
+            height: auto;
+            >p {
+                width: 100%;
+                height: px2rem(60px);
+                text-align: center;
+                line-height: px2rem(60px);
+                font-size: px2rem(16px);
+                font-weight: bold;
+                >span {
+                    color: #c9c9c9;
+                }
+            }
+            .banner {
+                width: 100%;
+                height: px2rem(140px);
+                overflow-x: auto;
+                >ul {
+                    width: auto;
+                    height: px2rem(140px);
+                    display: flex;
+                    >li {
+                        margin-left: px2rem(10px);
+                        background: #fff;
+                        font-size: px2rem(15px);
+                        color: #7c7779;
+                    }
+                }
+            }
+            .box1 {
+                width: 100%;
+                height: auto;
+                >dl {
+                    width: 100%;
+                    height: auto;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: px2rem(5px) px2rem(10px);
+                    background: #fff;
+                    border-bottom: 1px solid #eee;
+                    >dt {
+                        width: px2rem(100px);
+                        height: px2rem(100px);
+                        img {
+                            width: px2rem(100px);
+                            height: px2rem(100px);
+                        }
+                    }
+                    >dd {
+                        flex: 1;
+                    }
+                }
+            }
+        }
+    }
+}

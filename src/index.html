@@ -45,32 +45,7 @@
         </main>
         <footer class="footer"></footer>
     </div>
-    <script>
-        new BScroll(".main");
-        var box1 = document.querySelector(".box1");
-        var xml = new XMLHttpRequest();
-        xml.onload = function(res) {
-            if (res.target.status === 200) {
-                var data = JSON.parse(res.target.response);
-                var html = "";
-                data.forEach(function(v) {
-                    html += `  <dl>
-                        <dd>
-                            <h3>${v.title}</h3>
-                            <p>${v.text}</p>
-                            <span>${v.day}</span>
-                        </dd>
-                        <dt>
-                            <img src="${v.img}" alt="">
-                        </dt>
-                    </dl>`
-                });
-                box1.innerHTML = html;
-            }
-        }
-        xml.open("get", "/api/list", true);
-        xml.send();
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

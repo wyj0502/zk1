@@ -35,9 +35,8 @@
             .banner {
                 width: 100%;
                 height: px2rem(140px);
-                overflow-x: auto;
                 >ul {
-                    width: auto;
+                    width: px2rem(730px);
                     height: px2rem(140px);
                     display: flex;
                     >li {

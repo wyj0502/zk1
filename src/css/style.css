@@ -196,11 +196,10 @@ code {
 .wrap .main .box .banner {
   width: 100%;
   height: 3.73333rem;
-  overflow-x: auto;
 }
 
 .wrap .main .box .banner > ul {
-  width: auto;
+  width: 19.46667rem;
   height: 3.73333rem;
   display: flex;
 }
